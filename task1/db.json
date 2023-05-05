@@ -1,0 +1,52 @@
+{
+  "signup": [
+    {
+      "id": 1,
+      "name": "saurabh",
+      "email": "one@gmail.com",
+      "password": "1234"
+    },
+    {
+      "name": "Saurabh",
+      "email": "s@gmail.com",
+      "password": "1234",
+      "id": 2
+    },
+    {
+      "name": "rahul",
+      "email": "ra@gmail.com",
+      "password": "1234",
+      "id": 3
+    },
+    {
+      "name": "Saurabh",
+      "email": "s1@gmail.com",
+      "password": "1234",
+      "id": 4
+    },
+    {
+      "name": "Tapish",
+      "email": "t@test.com",
+      "password": "1234",
+      "id": 5
+    },
+    {
+      "name": "Tapish",
+      "email": "t1@test.com",
+      "password": "1234",
+      "id": 6
+    },
+    {
+      "name": "test1",
+      "email": "test1@gmail.com",
+      "password": "1234",
+      "id": 7
+    },
+    {
+      "name": "Tapish",
+      "email": "t3@test.com",
+      "password": "1234",
+      "id": 8
+    }
+  ]
+}
