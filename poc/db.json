@@ -1,0 +1,75 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+
+  "col_style": {
+    "col_border_color": "1px solid red",
+    "col_background_color": "rgba(0, 0, 0, 0.20)",
+    "col_content_alignment": "center",
+    "col_heading_font_size": "17px",
+    "col_text_color": "#7431f9",
+    "container_style": {
+      "display_style": "flex",
+      "display_direction": "column"
+    },
+    "row_style": {
+      "row_display": "flex",
+      "row_flex_wrap": "wrap",
+      "row_justify_content": "space-between"
+    },
+    "row1": {
+      "columns": [
+        { "width": "50%" },
+        { "width": "25%" },
+        { "width": "25%" }
+      ]
+    },
+    "row2": {
+      "columns": [{ "width": "60%" }, { "width": "20%" }]
+    },
+    "row3": {
+      "columns": [{ "width": "20%" }, { "width": "30%" }, { "width": "50%" }]
+    },
+    "rows": [
+      {
+        "columns": [
+          { "width": "25%" },
+          { "width": "25%" },
+          { "width": "25%" },
+          { "width": "25%" }
+        ]
+      },
+      {
+        "columns": [
+          { "width": "80%" },
+          { "width": "20%" }
+        ]
+      },
+      {
+        "columns": [
+          { "width": "50%" },
+          { "width": "50%" }
+        ]
+      },
+      {
+        "columns": [
+          { "width": "20%" },
+          { "width": "30%" },
+          { "width": "50%" }
+        ]
+      }
+    ]
+  }
+}

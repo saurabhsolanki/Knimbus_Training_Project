@@ -4,35 +4,37 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { Link } from "react-router-dom";
+import MultiLanguage from '../Language/MultiLanguage';
 
 const PublicNavbar = () => {
   return (
     <div>
-      <Navbar bg="dark" expand="lg">
-      <Container className="p-1">
-        <Nav.Link>
+      <Navbar bg="secondary " expand="lg">
+      <Container className="">
+        <Navbar.Brand>
           <Link to="/landing" className="text-decoration-none text-light">
             Landing Page
           </Link>
-        </Nav.Link>
-            <NavDropdown
-              title="Login / Signup"
-              id="basic-nav-dropdown"
-              className="text-light"
-            >
-              <NavDropdown.Item>
-                <Link to="/login" className="text-decoration-none text-dark">
+        </Navbar.Brand>
+
+        <div>
+              <MultiLanguage/>
+
+        </div>
+
+        <Navbar.Toggle aria-controls="navbarScroll" className=' bg-light border border-0'/>
+          <Navbar.Collapse id="navbarScroll" >
+          <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: "100px" }} navbarScroll >
+              </Nav>
+              <div className='d-flex gap-3'>
+                <Link to="/login" className="btn btn-primary ">
                   Login Page
                 </Link>
-              </NavDropdown.Item>
-
-              <NavDropdown.Divider />
-              <NavDropdown.Item>
-                <Link to="/signup" className="text-decoration-none text-dark">
+                <Link to="/signup" className="btn btn-primary">
                   Signup Page
                 </Link>
-              </NavDropdown.Item>
-            </NavDropdown>
+              </div>
+          </Navbar.Collapse>
       </Container>
     </Navbar>
     </div>
