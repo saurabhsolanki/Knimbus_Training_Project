@@ -7,7 +7,6 @@ export const loginFunction=(data,navigate)=>async(dispatch)=>{
     let token=`${email}:${password}`
     dispatch({type:AUTH_LOGIN_LOADING})
     try {
-            alert("Login Success")
             dispatch({type:AUTH_LOGIN_SUCCESS,payload:token})
             navigate('/home')
     } catch (error) {

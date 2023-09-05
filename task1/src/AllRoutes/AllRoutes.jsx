@@ -7,10 +7,17 @@ import ErrorPage from "../Pages/ErrorPage";
 import PublicRoute from "./PublicRoute";
 import LandingPage from "../Pages/LandingPage";
 import HomePage from "../Pages/HomePage";
+import AddProductPage from "../Pages/ProductPages/AddProductPage";
+import ViewProducts from "../Pages/ProductPages/ViewProducts";
+import UpdateProduct from "../Pages/ProductPages/UpdateProduct";
+import ItemPage from "../Pages/ItemPages/ItemPage";
+import EDashboard from "../Pages/E-library/E_Dashboard";
+import Breadcrumbs from "../Components/Breadcrumbs";
 
 const AllRoutes = () => {
   return (
     <div>
+      {/* <Breadcrumbs/> */}
       <Routes>
         <Route path="/" element={<Navigate to="/landing" />} />
         <Route
@@ -42,6 +49,46 @@ const AllRoutes = () => {
           element={
             <PrivateRoute>
               <HomePage />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="addProduct"
+          element={
+            <PrivateRoute>
+              <AddProductPage />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="viewProduct"
+          element={
+            <PrivateRoute>
+              <ViewProducts />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="item"
+          element={
+            <PrivateRoute>
+              <ItemPage/>
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="e-library"
+          element={
+            <PrivateRoute>
+              <EDashboard/>
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="products/:id"
+          element={
+            <PrivateRoute>
+              <UpdateProduct />
             </PrivateRoute>
           }
         />

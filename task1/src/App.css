@@ -10,3 +10,160 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.book-loader{
+    height: 500px;
+    width: 100%;
+}
+
+/* breadcrumbs */
+.breadcrumbs{
+    max-width: 1200px;
+    margin: 20px auto;
+  }
+  .breadcrumbs > *{
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .breadcrumbs .crumb:after {
+    content: '>';
+    margin-left: 10px;
+  }
+  .breadcrumbs .crumb:last-child:after {
+    display: none;
+  }
+  .breadcrumbs p{
+    color: #901313;
+  }
+
+  /* search */
+.suggested-result{
+  position: absolute;
+  z-index: 10;
+  background-color: #fff;
+  width: 36%;
+  top: 150px;
+  max-height: 300px;
+  overflow-y: scroll;
+  border: 1px solid #ddd;
+}
+
+
+.suggested-result li a{
+  cursor: pointer;
+  color: rgb(65, 94, 238);
+}
+
+
+/* -----------------google translator------------------ */
+#google_translate_element {
+  /* right: 95px;
+  top: 15px;
+  position: fixed; */
+  border: 1px solid rgb(147, 147, 147);
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  /* padding: 5px; */
+  background-color: white;
+  background-image: url('./Images/Language.svg') !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-position: 2.5px !important; */
+  background-size: cover;
+  background-size: 30px 30px;
+  display: none;
+}
+#selectDiv {
+  /* right: 95px;
+  top: 15px;
+  position: fixed; */
+  border: 1px solid rgb(147, 147, 147);
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  /* padding: 5px; */
+  background-color: white;
+  background-image: url('./Images/Language.svg') !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-position: 2.5px !important; */
+  background-size: cover;
+  background-size: 30px 30px;
+}
+
+/* -----------------------Normal Google language selector -----------------*/
+
+#google_translate_element .skiptranslate>div::after {
+  content: "Powered by ";
+  display: none;
+}
+
+#google_translate_element .skiptranslate .goog-te-combo{
+  border: none;
+  color: transparent;
+  background-color: transparent;
+  width: 100%;
+  height: 50px;
+  border-radius: 50%;
+  margin-top: -1px;
+  outline: none;
+}
+#selectDiv select{
+  border: 1px solid red;
+  color: transparent;
+  background-color: transparent;
+  width: 100%;
+  height: 50px;
+  border-radius: 50%;
+  margin-top: -1px;
+  outline: none;
+}
+#google_translate_element .skiptranslate .goog-te-combo option{
+color: rgb(0, 0, 0);
+}
+#selectDiv option{
+color: rgb(0, 0, 0);
+}
+
+
+
+#google_translate_element span{
+  display: none;
+}
+
+
+/* ----------------------------------dropdown google language selector css------------------------------ */
+
+a.VIpgJd-ZVi9od-xl07Ob-lTBxed>span{
+  color:rgb(0, 0, 0)
+}
+
+div.goog-te-gadget-simple{
+  border-radius: 50%;
+  padding:7px;
+  width: 50px;
+  height:50px;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+div.goog-te-gadget-simple .goog-te-gadget-icon{
+background-image: url('./Images/Language.svg') !important;
+/* background-image: url('https://play-lh.googleusercontent.com/ZrNeuKthBirZN7rrXPN1JmUbaG8ICy3kZSHt-WgSnREsJzo2txzCzjIoChlevMIQEA') !important; */
+/* background-image: url('https://icon-library.com/images/multi-language-icon/multi-language-icon-8.jpg') !important; */
+height: 100%;
+width: 100%;
+background-position: -1.5px !important;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+/* border-radius: 25px; */
+}
+
+/* .skiptranslate iframe{
+  display: none;
+  top: -40px;
+  position: fixed;
+} */

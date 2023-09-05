@@ -41,8 +41,10 @@ const SignupPage = () => {
   return (
     <div className="backgroundImage text-left">
       <div>&nbsp;</div>
-      <Container fluid="md" style={{ width: "30%" }} className="mt-4 text-left">
-        <Card className="p-4">
+      <Container className="mt-4 text-left">
+        <div className="row">
+          <div className="col-lg-4 col-md-8 m-auto">
+          <Card className="p-4">
           <h3> SignUp Form</h3>
           <Form className="mt-3">
             <Stack gap={2}>
@@ -106,6 +108,9 @@ const SignupPage = () => {
             </Stack>
           </Form>
         </Card>
+          </div>
+        </div>
+
       </Container>
     </div>
   );

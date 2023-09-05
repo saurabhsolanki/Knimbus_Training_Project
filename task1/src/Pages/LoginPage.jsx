@@ -5,6 +5,7 @@ import Form from "react-bootstrap/Form";
 import { useDispatch, useSelector } from "react-redux";
 import { NavLink, useNavigate } from "react-router-dom";
 import { getAllUserData, loginFunction } from "../Redux/Auth/Auth.Action";
+import {toast } from 'react-toastify';
 
 const inti = {
   email: "",
@@ -38,6 +39,7 @@ const LoginPage = () => {
     );
     if (valid) {
       dispatch(loginFunction(data, navigate));
+      toast.success("Login Successfully",{autoClose: 500,})
     } else if (!validEmail) {
       return setCheckEmail(false);
     } else if (validPassword) {
@@ -54,8 +56,10 @@ const LoginPage = () => {
   return (
     <div className="backgroundImage">
       <div>&nbsp;</div>
-      <Container fluid="md" style={{ width: "30%" }} className="mt-4 text-left">
-        <Card className="p-4">
+      <Container className="mt-4 text-left">
+      <div className="row">
+          <div className="col-lg-4 col-md-8 m-auto">
+          <div className= "border p-4">
           <h3> Login Form</h3>
           <Form>
             <FloatingLabel
@@ -111,7 +115,10 @@ const LoginPage = () => {
             Don't Have Account ? <NavLink to="/signup" className="text-primary"> Signup </NavLink>
           </div>
           </Form>
-        </Card>
+        </div>
+          </div>
+          </div>
+
       </Container>
     </div>
   );
